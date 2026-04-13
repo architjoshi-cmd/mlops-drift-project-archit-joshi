@@ -15,7 +15,6 @@ This project implements a complete **MLOps pipeline** that automates the lifecyc
 ---
 
 ## ⚙️ Workflow
-
 1. Load and preprocess dataset  
 2. Train baseline model (v1)  
 3. Evaluate model performance  
@@ -27,3 +26,46 @@ This project implements a complete **MLOps pipeline** that automates the lifecyc
 ---
 
 ## 📁 Project Structure
+├── models/
+│ ├── model_v1.pkl
+│ └── model_v2.pkl
+├── reports/
+│ └── drift_report.html
+├── src/
+│ ├── data_ingestion.py
+│ ├── preprocessing.py
+│ ├── training.py
+│ ├── drift_detection.py
+│ └── retraining.py
+├── notebooks/
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 📊 Outputs
+- **Models**
+  - `models/model_v1.pkl`
+  - `models/model_v2.pkl`
+
+- **Drift Report**
+  - `reports/drift_report.html`
+
+---
+
+## 🛠️ Tech Stack
+- Python  
+- Scikit-learn  
+- Pandas  
+- Evidently AI  
+
+---
+
+## ▶️ Installation & Usage
+
+### Clone the repository
+```bash
+git clone https://github.com/your-username/mlops-drift-pipeline.git
+cd mlops-drift-pipeline
+
