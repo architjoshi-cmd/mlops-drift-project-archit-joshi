@@ -1,78 +1,29 @@
-🚀 MLOps Pipeline with Data Drift Detection
-📌 Project Description
+# 🚀 MLOps Pipeline with Data Drift Detection
 
-This repository demonstrates a production-ready MLOps pipeline that automates the end-to-end lifecycle of a machine learning model. It integrates data processing, model training, evaluation, monitoring, and continuous improvement through automated retraining.
+## 📌 Overview
+This project implements a complete **MLOps pipeline** that automates the lifecycle of a machine learning model, from data ingestion to monitoring and retraining. It also includes **data drift detection** to ensure model performance remains stable when input data changes over time.
 
-A key highlight of this project is the implementation of data drift detection, ensuring model reliability when faced with changing data distributions in real-world environments.
+---
 
-🧩 Key Features
-📥 Data ingestion and validation
-🔄 Data preprocessing and feature engineering
-🤖 Model training and performance evaluation
-📊 Data drift detection using Evidently AI
-🔁 Automated model retraining pipeline
-🗂️ Model versioning and comparison
-⚙️ Workflow
+## 🧩 Features
+- Data ingestion and preprocessing  
+- Model training and evaluation  
+- Data drift detection using Evidently AI  
+- Automated model retraining  
+- Model versioning and comparison  
 
-The pipeline follows a structured workflow:
+---
 
-Dataset Loading – Import and prepare raw data
-Initial Training – Train baseline model (v1)
-Evaluation – Assess model performance using metrics
-Drift Simulation – Introduce changes in input data
-Drift Detection – Identify distribution shifts
-Retraining – Train updated model (v2)
-Comparison – Analyze performance improvements
-📁 Project Structure
-├── models/
-│   ├── model_v1.pkl
-│   └── model_v2.pkl
-├── reports/
-│   └── drift_report.html
-├── src/
-│   ├── data_ingestion.py
-│   ├── preprocessing.py
-│   ├── training.py
-│   ├── drift_detection.py
-│   └── retraining.py
-├── notebooks/
-├── requirements.txt
-└── README.md
-📊 Outputs
-✅ Trained Models
-model_v1.pkl – Baseline model
-model_v2.pkl – Retrained model
-📈 Drift Report
-Interactive HTML report generated using Evidently
-🛠️ Tech Stack
-Category	Tools/Frameworks
-Language	Python
-ML Library	Scikit-learn
-Data Handling	Pandas
-Monitoring	Evidently AI
-▶️ Getting Started
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/mlops-drift-pipeline.git
-cd mlops-drift-pipeline
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-3️⃣ Run the Pipeline
-python src/training.py
-python src/drift_detection.py
-📌 Use Cases
-Monitoring ML models in production
-Detecting data distribution shifts
-Automating retraining workflows
-Building scalable MLOps systems
-📈 Future Enhancements
-Integration with CI/CD pipelines
-Deployment using Docker & Kubernetes
-Real-time drift monitoring
-Experiment tracking with MLflow
-🤝 Contributing
+## ⚙️ Workflow
 
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
+1. Load and preprocess dataset  
+2. Train baseline model (v1)  
+3. Evaluate model performance  
+4. Simulate data drift  
+5. Detect drift using Evidently  
+6. Retrain model (v2)  
+7. Compare model performance  
 
-📄 License
+---
 
-This project is licensed under the MIT License.
+## 📁 Project Structure
